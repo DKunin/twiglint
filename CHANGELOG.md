@@ -1,3 +1,7 @@
+# 0.0.10
+
+- Cleaned up git history
+
 # 0.0.9
 
 - Translations of readme and changelog
