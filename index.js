@@ -34,7 +34,7 @@ const cli = meow(
 );
 
 const filePath = cli.input;
-
+console.log(filePath);
 if (cli.flags.h) {
     // eslint-disable-next-line
     console.log(cli.help);
