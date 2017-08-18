@@ -1,0 +1,4 @@
+{% block item_price %}
+    {{ item.price|number_format(0, ',', ' ') }} руб.
+    {% if item.cparams.is_longterm is defined %}{{ item.cparams.is_longterm ? 'в месяц' : 'за сутки'}}{% endif %}
+{% endblock %}

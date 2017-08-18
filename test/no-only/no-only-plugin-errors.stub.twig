@@ -1,0 +1,10 @@
+<div class="profile-public-summary-item">
+    {% include 'components/profile/public/socialistics.html' with {
+        sources: publicUser.connection.sources
+    } only %}
+</div>
+<div class="profile-public-summary-item">
+    {% include 'components/profile/public/social.html' with {
+        sources: publicUser.connection.sources
+    } %}
+</div>

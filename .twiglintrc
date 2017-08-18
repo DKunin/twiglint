@@ -1,0 +1,25 @@
+module.exports = {
+    globals: {
+        'now': true,
+        'defer': true,
+        'inline': true
+    },
+    plugins: [
+        'no-closed-self-closing-tags',
+        'no-only',
+        'no-unused-vars',
+        'no-undeclared-vars',
+        'prefer-camel-case-vars',
+        'no-spaceless',
+        'tags-padding'
+    ],
+    rules: {
+        'no-closed-self-closing-tags': 2,
+        'no-only': 1,
+        'no-unused-vars': 2,
+        'no-undeclared-vars': 1,
+        'prefer-camel-case-vars': 1,
+        'no-spaceless': 1,
+        'tags-padding': 1
+    }
+}

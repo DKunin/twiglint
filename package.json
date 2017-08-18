@@ -1,0 +1,39 @@
+{
+  "name": "twiglint",
+  "description": "Linter for the twig templates",
+  "homepage": "https://github.com/dkunin/twiglint",
+  "version": "0.0.9",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dkunin/twiglint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dkunin/twiglint/issues"
+  },
+  "private": false,
+  "main": "index.js",
+  "bin": {
+    "twiglint": "./index.js"
+  },
+  "scripts": {
+    "lint": "eslint **/*.js, ./*.js --fix",
+    "test": "ava --verbose",
+    "test:watch": "ava --watch --verbose"
+  },
+  "keywords": [
+    "twig",
+    "linter",
+    "cli"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "0.22.0",
+    "tokenizer2": "2.0.0"
+  },
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "meow": "3.7.0",
+    "text-table": "~0.2.0",
+    "twig-ast": "git+ssh://git@github.com:DKunin/twig.js.git"
+  }
+}
