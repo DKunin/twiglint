@@ -1,0 +1,3 @@
+{% include "someItem.html" with {
+    title: title|replace({'\\': 'a'})
+} only %}

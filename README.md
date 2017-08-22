@@ -48,10 +48,6 @@ For now rules are hardwired, there will be configurable config, and external plu
 - [ ] cli testing
 - [ ] Sublime/VSCode/PhpStorm extentions
 
-# Known Bugs
-
-- [ ] Doesn't understand include with objects
-
 # Docblock formatting
 
     {# @param {string} imageLink #}

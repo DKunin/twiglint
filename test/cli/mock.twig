@@ -1,4 +1,0 @@
-{% include "someItem.html" with {
-    title: title|replace({'\\': '\/'}),
-    description: description|striptags|strip_long_utf|replace({"\n": ' ', '\\': '\/'})|cut(128)|e,
-} only %}
