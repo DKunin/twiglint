@@ -54,11 +54,12 @@ if (!filePath.length) {
 }
 
 const allReports = filePath.map(singleFilePath => {
+    if (cli.flags.d) {
+        // eslint-disable-next-line
+        console.log(`Processing file: ${singleFilePath}`);
+    }
+
     return twiglint(singleFilePath, cli.flags).then(result => {
-        if (cli.flags.d) {
-            // eslint-disable-next-line
-            console.log(`Processing file: ${singleFilePath}`);
-        }
         const allTheErorrs = appliedPlugins
             .reduce((allErrorsArray, singlePlugin) => {
                 return allErrorsArray.concat(
