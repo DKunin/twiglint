@@ -43,9 +43,9 @@ For now rules are hardwired, there will be configurable config, and external plu
 - [x] Maximum usage of the parser
 - [x] Visual reporter with the ability to jump to the needed line (compact)
 - [x] Plugins as seperate modules
-- [ ] Write pluggable logic for external pluginx
+- [x] cli testing
+- [ ] Write pluggable logic for external plugin
 - [ ] Allow to use local config
-- [ ] cli testing
 - [ ] Sublime/VSCode/PhpStorm extentions
 
 # Docblock formatting

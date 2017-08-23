@@ -1,3 +1,7 @@
+# 0.0.11-12
+
+- Adding cli tests, to check for parsing errros
+
 # 0.0.10
 
 - Cleaned up git history
