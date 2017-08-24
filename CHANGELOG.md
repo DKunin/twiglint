@@ -1,3 +1,7 @@
+# 0.0.13
+
+- More cli tests, fixups of parsing errors in twig-ast
+
 # 0.0.11-12
 
 - Adding cli tests, to check for parsing errros

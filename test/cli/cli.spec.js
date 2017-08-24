@@ -20,3 +20,14 @@ test('cli parse error ', async t => {
         stderr: ''
     });
 });
+
+test('cli only wothout with ', async t => {
+    const errors = promiseExec(
+        './index.js ./test/cli/cli-variable-follow.twig'
+    );
+    // errors.then(res => console.log(JSON.stringify(res)));
+    t.deepEqual(await errors, {
+        stdout: '\n./test/cli/cli-variable-follow.twig\n  1:0  warning  Use only to reduce amount of variables inside of template  no-only\n  1:0  warning  "only" used, but not declared                              no-undeclared-vars\n\n✖ 2 problems (0 errors, 2 warnings)\n\n',
+        stderr: ''
+    });
+});
