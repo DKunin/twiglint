@@ -1,0 +1,5 @@
+{% include [
+    "items/moderation/item/item." ~ i.category_id ~ ".html",
+    "items/moderation/item/item." ~ i.root_category_id ~ ".html",
+    "items/moderation/block.item.html"
+] with { item: i } %}
